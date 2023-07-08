@@ -1,0 +1,193 @@
+/* App.css */
+
+/* App.css */
+
+.App {
+  display: flex;
+  flex-direction: row; /* default to row for mobile */
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+@media (max-width: 600px) {
+  .App {
+    flex-direction: row; /* horizontal layout for mobile */
+    overflow-x: scroll; /* enable horizontal scrolling on mobile */
+  }
+}
+
+@media (min-width: 600px) {
+  .App {
+    flex-direction: column; /* vertical layout for desktop */
+  }
+}
+
+.Stage {
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid gray;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .Stage {
+    width: max-content; /* mobile: stages should take up as much width as their content */
+  }
+}
+
+@media (min-width: 600px) {
+  .Stage {
+    width: 100%; /* desktop: stages should take up full width */
+  }
+}
+
+@media (min-width: 600px) {
+  .Stage {
+    width: 24%;
+  }
+}
+
+h1 {
+  color: #333;
+}
+
+button {
+  margin: 10px;
+  padding: 10px;
+  background-color: #008cba; /* Blue */
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #333; /* Black */
+  color: white;
+}
+
+input[type='text'] {
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.Stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.Stage-name {
+  width: 100%;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (min-width: 600px) {
+  .Stage-name {
+    font-size: 18px; /* Larger font size for larger screens */
+  }
+}
+
+.Stage h2 {
+  color: #333;
+}
+
+.Stage div {
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #e0e0e0;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.Stage div:hover {
+  background-color: #d0d0d0;
+}
+
+h1 {
+  color: #333;
+}
+
+button {
+  margin: 10px;
+  padding: 10px;
+  background-color: #008cba; /* Blue */
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #333; /* Black */
+  color: white;
+}
+
+input[type='text'] {
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.Stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.Stage-name {
+  width: 100%;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (min-width: 600px) {
+  .Stage-name {
+    font-size: 18px; /* Larger font size for larger screens */
+  }
+}
+
+.Stage h2 {
+  color: #333;
+}
+
+.Stage div {
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #e0e0e0;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.Stage div:hover {
+  background-color: #d0d0d0;
+}
